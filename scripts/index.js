@@ -15,7 +15,7 @@ console.log(zPeeps);
 
 
 
-
+//dead count
 function bringOutYourDead(characters, item) {
     count = 2124;
     let allTheInfo = Object.keys(characters);
@@ -43,3 +43,13 @@ bringOutYourDead(characters, 'died');
 // function deadIsCount(deadCount) {
 //     console.log(deadCount);
 // }
+
+//most titles
+let titleYo = characters.sort(function(a, b) {
+    return a.titles - b.titles;
+});
+
+
+
+console.log(titleYo[0]);
+console.log(titleYo[1]);
