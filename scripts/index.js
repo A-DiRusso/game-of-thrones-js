@@ -53,3 +53,34 @@ let titleYo = characters.sort(function(a, b) {
 
 console.log(titleYo[0]);
 console.log(titleYo[1]);
+
+
+// how many Valyrian's in tha house???
+let Valyrian = characters.filter(char => {
+    return char.culture === "Valyrian";
+});
+console.log(Valyrian);
+
+
+// hot pie is my dog, but who played that playa?
+
+let pieGuy = characters.filter(pie => {
+    return pie.name === "Hot Pie";
+});
+
+let guyPie = pieGuy.filter(char => {
+    return "playedBy";
+});
+
+console.log(pieGuy);
+console.log(guyPie);
+
+//who's on the cutting room floor? 
+
+let notUpInHere = characters.filter(noShows => {
+    return noShows.tvSeries[0] === "";
+});
+
+console.log(notUpInHere);
+
+
