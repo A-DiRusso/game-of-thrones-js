@@ -83,4 +83,15 @@ let notUpInHere = characters.filter(noShows => {
 
 console.log(notUpInHere);
 
+//Any Targaryen's in tha Housee, let me here ya?
+let thaTars = characters.filter(who => {
+    let whosWho = who.name.split(' ');
+    return whosWho[1] === "Targaryen";
+});
 
+console.log(thaTars);
+
+//who's coming with me? (or who's down for the oskie woskie)
+// let theBloods = characters.filter(all => {
+    // return all.allegiances ===
+// })
